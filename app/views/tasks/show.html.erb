@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h1><%= @task.title %></h1>
+  <p class="card p-3 bg-light"><%= @task.details %></p>
+  <span class="card p-3 border-bottom d-flex flex-row align-items-center">
+      <% if @task.complete %>
+        <i class="far fa-check-square" ></i><p class="m-0">&nbsp This task is completed!</p>
+      <% else %>
+        <i class="far fa-square"></i><p class="m-0"> &nbsp This task is incomplete</p>
+      <% end %>
+  </span>
+  <br>
+  <%= link_to "Back To List",  tasks_path, class: 'btn btn-primary'%>
+</div>
