@@ -12,6 +12,12 @@
       <%= f.text_field :details, class: 'form-control' %>
     </div>
 
+    <div class="form-group align-items-center">
+
+      <%= f.check_box :complete %>
+      <%= f.label :complete%>
+    </div>
+
     <%= f.submit class: 'btn btn-primary' %>
   <% end %>
 </div>
